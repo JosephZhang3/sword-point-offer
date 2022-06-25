@@ -4,6 +4,10 @@ package Singleton;
  * 静态私有成员，懒加载，双重校验锁 + 内存可见 保证并发安全
  */
 public class MultiThreadImpl {
+
+    private MultiThreadImpl() {
+    }
+
     private static volatile MultiThreadImpl instance;
 
     private static final Object lock = new Object();

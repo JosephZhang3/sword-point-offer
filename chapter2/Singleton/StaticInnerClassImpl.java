@@ -5,11 +5,15 @@ package Singleton;
  */
 public class StaticInnerClassImpl {
 
-    public static StaticInnerClassImpl getInstance() {
-        return InnerC.instance;
+    private StaticInnerClassImpl(){
+        System.out.println("called once");
     }
 
-    private static class InnerC {
-        private static final StaticInnerClassImpl instance = new StaticInnerClassImpl();
+    static class InnerCla {
+        private static StaticInnerClassImpl instance = new StaticInnerClassImpl();
+
+        public StaticInnerClassImpl getInstance() {
+            return instance;
+        }
     }
 }

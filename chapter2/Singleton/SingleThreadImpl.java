@@ -4,6 +4,10 @@ package Singleton;
  * 静态私有成员，懒加载
  */
 public class SingleThreadImpl {
+
+    private SingleThreadImpl() {
+    }
+
     private static SingleThreadImpl instance;
 
     public static SingleThreadImpl getInstance() {
