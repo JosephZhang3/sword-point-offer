@@ -10,6 +10,7 @@ public class StaticInnerClassImpl {
     }
 
     static class InnerCla {
+        // Do not declare as final, because you may use the field later.
         private static StaticInnerClassImpl instance = new StaticInnerClassImpl();
 
         public StaticInnerClassImpl getInstance() {
