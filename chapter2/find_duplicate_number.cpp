@@ -31,10 +31,10 @@ bool find(int numbers[], int length, int* duplication){
 				return true;
 			}
 
-            // 错误写法 因为 numbers[i] 有赋值变化
 			// int temp = numbers[i];
 			// numbers[i] = numbers[numbers[i]];
             // numbers[numbers[i]] = temp;
+            // 上三行是错误写法 因为 numbers[i] 赋值后变化了
 
 			int temp = numbers[i];
 			numbers[i] = numbers[temp];
