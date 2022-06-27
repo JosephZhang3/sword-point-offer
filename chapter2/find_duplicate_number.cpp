@@ -3,7 +3,7 @@
 using namespace std;
 
 /**
- * find any one duplicate number in array
+ * find any ONE duplicate number in array
  * */
 bool find(int numbers[], int length, int* duplication){
 	if (numbers == nullptr || length == 0){
